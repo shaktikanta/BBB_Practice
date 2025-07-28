@@ -1,2 +1,0 @@
-/mnt/d/BBB_practice/test_driver/testDriver.o
-
