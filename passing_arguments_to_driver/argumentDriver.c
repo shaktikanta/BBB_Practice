@@ -8,7 +8,7 @@ char *name;
 int cb_val = 0;
 
 /* Set the variable values accepted from command line to the vars*/
-module_param(val, int, S_IWUSR|S_IRUSR);
+module_param(val, int, 0644);
 module_param(name, charp, 0644);
 module_param_array(arr, int, NULL, 0644);
 
@@ -28,6 +28,9 @@ struct kernel_param_ops driver_param =
     .set = &notify_val,     // call back function address
     .get = &param_get_int,  // standard getter function
 };
+
+/* Module param set for call back fucntion */
+module_param_cb(cb_val, &driver_param, &cb_val, 0644);
 
 static int __init argumentDriver_init(void) {
     /* Trying to access the variables values given form command line */
