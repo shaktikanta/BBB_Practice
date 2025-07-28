@@ -1,0 +1,1 @@
+cmd_/mnt/d/BBB_practice/test_driver/testDriver.ko := arm-linux-gnueabihf-ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /mnt/d/BBB_practice/test_driver/testDriver.ko /mnt/d/BBB_practice/test_driver/testDriver.o /mnt/d/BBB_practice/test_driver/testDriver.mod.o;  true

@@ -1,0 +1,1 @@
+cmd_/mnt/d/BBB_practice/passing_arguments_to_driver/Module.symvers := sed 's/ko$$/o/' /mnt/d/BBB_practice/passing_arguments_to_driver/modules.order | scripts/mod/modpost -m    -o /mnt/d/BBB_practice/passing_arguments_to_driver/Module.symvers -e -i Module.symvers   -T -
