@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But NOT these:
+!*.c
+!*.ko
+!Makefile
+!/.gitignore
