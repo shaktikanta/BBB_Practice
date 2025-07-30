@@ -1,3 +1,4 @@
+/* Static declaration Method for major and Minor no */
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/module.h>
@@ -22,6 +23,7 @@ static int __init firstCharDriver_init(void) {
 
 /* Exit Method */
 void __exit firstCharDriver_exit(void) {
+    unregister_chrdev_region(dev, 1);
     printk(KERN_INFO "Module removed successfully.\n");
 }
 
